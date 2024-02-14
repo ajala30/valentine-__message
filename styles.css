@@ -1,0 +1,80 @@
+/* Base styles */
+body {
+ font-family:  monospace;
+ background-color: #f0f0f0;
+ font-size: 1rem;
+}
+
+.container {
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto; /* Remove the top and bottom margin */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #ff4d4d;
+}
+
+button {
+  padding: 15px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: large;
+}
+
+#message p {
+  display: flex;
+  justify-content: center; 
+  text-align: center; 
+}
+
+button:hover {
+  padding: 12px 24px ;
+  background-color: #e60000;
+}
+.love{
+  font-size:1.6em;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-style: italic;
+  text-transform: capitalize;
+  text-shadow: #ff4d4d .08em 0;
+}
+
+#emoji p {
+  font-size: 3em; 
+  color: red; 
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px;
+    max-width: 90%;
+  }
+}
